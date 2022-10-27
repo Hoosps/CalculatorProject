@@ -1,9 +1,9 @@
-package CalculatorProject;
+
 
 public class Calculator {
   public static void main(String[] args) {
     
-    
+    Methods geometry = new Methods()[;]
       
     
     
@@ -27,8 +27,13 @@ public class Calculator {
     return a % b;
    
   }
-  public static double randomNum(double max, double min) {
-    int randNum;
-   
+  public static double randomNum(int max, int min) {
+    if (max < 0 && min < 0) {
+      return (int)(Math.random() * (max - min) + min);
+    } else {
+      return (int)(Math.random() * ((max - min) + 1) + min);
+      
+    }
+     
   }
 }
